@@ -1,7 +1,4 @@
 # HosnaGh.github.io
-Data scientist and researcher focused on biomedical signal processing, pre-diagnostic systems , and affective computing
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

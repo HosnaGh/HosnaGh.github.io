@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Hosna Ghandeharioun | Data Scientist</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         :root {
             --sidebar-width: 300px;
@@ -43,15 +45,17 @@
             overflow-y: auto;
         }
 
-       /* .profile-pic {
+        /* 2. FIXED YOUR PROFILE PICTURE CSS (IT WAS BROKEN/COMMENTED) */
+        .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
-            border: 3px solid var(--border-color);*/
-           background-color: #ccc; /* Placeholder color if image fails to load */
-        }*/
+            border: 3px solid var(--border-color);
+            background-color: #ccc; /* Placeholder color */
+        }
+
         .sidebar h1 {
             font-size: 1.5em;
             margin: 0 0 10px 0;
@@ -90,7 +94,7 @@
             color: #fff;
         }
 
-        /* Social Links */
+        /* 3. UPDATED SOCIAL LINKS CSS FOR ICONS */
         .social-links {
             margin-top: auto; /* Pushes to the bottom */
             padding-top: 20px;
@@ -98,11 +102,14 @@
 
         .social-links a {
             display: inline-block;
-            margin: 0 8px;
+            margin: 0 10px; /* Increased spacing */
             color: var(--text-color);
             text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 500;
+            transition: color 0.3s; /* Smooth hover */
+        }
+
+        .social-links a i {
+            font-size: 1.5em; /* Made icons larger */
         }
 
         .social-links a:hover {
@@ -153,6 +160,15 @@
             font-weight: 600;
             display: block;
             color: #000;
+        }
+        /* Make links in publications match the style */
+        .pub-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .pub-title a:hover {
+            color: var(--link-color);
+            text-decoration: underline;
         }
         .pub-details {
             font-style: italic;
@@ -251,10 +267,10 @@
         </nav>
 
         <div class="social-links">
-            <a href="mailto:hosna.gandeharioun@gmail.com">Email</a> 
-            <a href="https://www.linkedin.com/in/hosna-ghandeharioun" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=iLO74MkAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a href="https://hosnagh.github.io/" target="_blank">GitHub</a> 
+            <a href="mailto:hosna.gandeharioun@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/hosna-ghandeharioun" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=iLO74MkAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://hosnagh.github.io/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
 
     </div>
@@ -278,7 +294,7 @@
             <div class="job">
                 <p class="job-title">Assistant Professor (Tenure Track)</p>
                 <p class="job-company">Khorasan Institute of Higher Education (KIHE)</p>
-                <p class="job-date">September 2018 - Present</p> 
+                <p class="job-date">September 2018 - Present</p>
                 <ul class="job-duties">
                     <li>Instructed Fundamental & Professional courses (Physiology, Anatomy, Medical Physics, Digital Signal Processing, Biomedical Signal Processing). </li>
                     <li>Founded & supervised the Scientific Institute of Biomed. Eng. for Students (2020). </li>
@@ -288,8 +304,8 @@
             </div>
             
             <div class="job">
-                <p class="job-title">Biomedical Engineering Consultant</p> 
-                <p class="job-company">PayaTech knowledge-based Ltd.</p> 
+                <p class="job-title">Biomedical Engineering Consultant</p>
+                <p class="job-company">PayaTech knowledge-based Ltd.</p>
                 <p class="job-date">September 2017 - Present</p>
                 <ul class="job-duties">
                     <li>Collaborated in the planning, design, development, and tests of software applications, mainly in gait and posture analysis. </li>
@@ -299,18 +315,18 @@
             </div>
             
             <div class="job">
-                <p class="job-title">Online Course Instructor</p> 
-                <p class="job-company">Kalan Danesh Sahand Ltd. (Faradars)</p> 
-                <p class="job-date">January 2024 - Present</p> 
+                <p class="job-title">Online Course Instructor</p>
+                <p class="job-company">Kalan Danesh Sahand Ltd. (Faradars)</p>
+                <p class="job-date">January 2024 - Present</p>
                 <ul class="job-duties">
                     <li>Instructed undergraduate and graduate online courses (e.g., "Medical Physics"). </li>
                 </ul>
             </div>
 
             <div class="job">
-                <p class="job-title">Faculty Lecturer</p> 
-                <p class="job-company">Imam Reza International University (IRIU)</p> 
-                <p class="job-date">December 2008 - December 2016</p> 
+                <p class="job-title">Faculty Lecturer</p>
+                <p class="job-company">Imam Reza International University (IRIU)</p>
+                <p class="job-date">December 2008 - December 2016</p>
                 <ul class="job-duties">
                     <li>Instructed courses including Engineering Mathematics, Electrical Circuits I, Biological Signal Processing, Neural Networks, and Medical Instrumentation. </li>
                     <li>Conducted "eHealth & Health informatics; Opportunities and Challenges" Workshop. </li>
@@ -324,52 +340,51 @@
 
             <ul class="publications-list">
                 <li>
-                    <span class="pub-title">"APNEAPACK; A Smart Phone Application for Real-Time Home-Based Screening of Obstructive Sleep Apnea..."</span> 
+                    <span class="pub-title">"APNEAPACK; A Smart Phone Application for Real-Time Home-Based Screening of Obstructive Sleep Apnea..."</span>
                     <span class="pub-details">Under revision at IET Signal Processing. </span>
                 </li>
                 <li>
                     <span class="pub-title">
-                    <a href="https://arxiv.org/abs/2409.12818" target="_blank">"Development of a pulse oximeter robust to measurement errors and with the ability to estimate heart rate and transmit data to smartphones"</a>
+                        <a href="https://arxiv.org/abs/2409.12818" target="_blank">"Development of a pulse oximeter robust to measurement errors and with the ability to estimate heart rate and transmit data to smartphones"</a>
                     </span>
                     <span class="pub-details">Accepted and presented at 2nd International Conference on New Researches and Technologies in Electrical Engineering (ICNRTEE 2024).</span>
                 </li>
                 <li>
                     <span class="pub-title">
-                    <a href="https://aircconline.com/abstract/ijaia/v12n6/12621ijaia05.html" target="_blank">"Automatic Home-Based Screening of Obstructive Sleep Apnea Using Single Channel Electrocardiogram and SPO2 Signals"</a>
+                        <a href="https://aircconline.com/abstract/ijaia/v12n6/12621ijaia05.html" target="_blank">"Automatic Home-Based Screening of Obstructive Sleep Apnea Using Single Channel Electrocardiogram and SPO2 Signals"</a>
                     </span>
                     <span class="pub-details">International Journal of Artificial Intelligence & Applications (IJAIA), vol.12, no.6, pp. 47-63, November 2021.</span>
                 </li>
-                 <li>
+                <li>
                     <span class="pub-title">
-                    <a href="https://aircconline.com/csit/papers/vol11/csit111503.pdf" target="_blank">"Online Obstructive Sleep Apnea Detection Based on Hybrid Machine Learning and Classifier Combination for Home-Based Applications"</a>    
+                        <a href="https://aircconline.com/csit/papers/vol11/csit111503.pdf" target="_blank">"Online Obstructive Sleep Apnea Detection Based on Hybrid Machine Learning and Classifier Combination for Home-Based Applications"</a>
                     </span>
                     <span class="pub-details">In Proc. 3rd International Conference on Machine Learning & Applications (CMLA 2021), vol 11, no 15, pp. 22-35, Sept. 2021.</span>
-                    <a href="https://www.youtube.com/watch?v=S6ZORpeu8RE" target="_blank">"Here is the presentation video."</a>
-                    </span>
+                    <a href="https://www.youtube.com/watch?v=S6ZORpeu8RE" target="_blank">Here is the presentation video.</a>
                 </li>
                 <li>
                     <span class="pub-title">
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank">"A Fully Automatic Ocular Artifact Suppression from EEG Data using Higher Order Statistics: Improved Performance by Wavelet Analysis"</a>    
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank">"A Fully Automatic Ocular Artifact Suppression from EEG Data using Higher Order Statistics: Improved Performance by Wavelet Analysis"</a>
                     </span>
                     <span class="pub-details">Medical Engineering & Physics, 2010, 32:720–729.</span>
                 </li>
                 <li>
-                    <span class="pub-title"> 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/26576363/" target="_blank">"Accurate Estimation of Obstructive Sleep Apnea Severity Using Non-polysomnographic Features for Home-Based Screening"</a>    
+                    <span class="pub-title">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/26576363/" target="_blank">"Accurate Estimation of Obstructive Sleep Apnea Severity Using Non-polysomnographic Features for Home-Based Screening"</a>
                     </span>
                     <span class="pub-details">Iranian Journal Public Health, 2015, 44 (10):1433-1435. </span>
                 </li>
                 <li>
                     <span class="pub-title">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/26632086/" target="_blank">"Analysis of Respiratory Events in Obstructive Sleep Apnea Syndrome: Inter-relations and Association to Simple Nocturnal Features"</a>    
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/26632086/" target="_blank">"Analysis of Respiratory Events in Obstructive Sleep Apnea Syndrome: Inter-relations and Association to Simple Nocturnal Features"</a>
                     </span>
                     <span class="pub-details">Revista Portuguesa de Pneumologia, 2016; 22(2):86-92. </span>
                 </li>
-                 <li>
-                    <span class="pub-title">"
-                     <a href="https://ieeexplore.ieee.org/document/4462992" target="_blank">"A Fully Automatic Method for Ocular Artifact Suppression from EEG Data Using Wavelet Transform and ICA"</a>    
+                <li>
+                    <span class="pub-title">
+                        <a href="https://ieeexplore.ieee.org/document/4462992" target="_blank">"A Fully Automatic Method for Ocular Artifact Suppression from EEG Data Using Wavelet Transform and ICA"</a>
                     </span>
-                     <span class="pub-details">In Proc. 28th Engineering in Medicine & Biology Society (EMBS) Annual International Conference, 2006, New York, USA. </span>
+                    <span class="pub-details">In Proc. 28th Engineering in Medicine & Biology Society (EMBS) Annual International Conference, 2006, New York, USA. </span>
                 </li>
             </ul>
         </section>
@@ -387,7 +402,7 @@
             <p><strong>A Modified Method for Sleep Apnea Detection with Effective Hardware Implementation</strong> <br>
             The hardware and smartphone application are undergoing the procedure of IRI patent. Publication of three related journal papers in SCOPUS indexed journals.</p>
 
-            <h2>Awards & Distinctions</h2> 
+            <h2>Awards & Distinctions</h2>
             <ul class="job-duties">
                 <li>The Distinguished Professor Award, Imam Reza International University (IRIU), 2021. </li>
                 <li>Top Graduate Student, Electrical Engineering Department, Ferdowsi University of Mashhad (FUM), 2016. </li>
@@ -399,7 +414,7 @@
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>
-                    <strong>Software & Programming Languages:</strong> 
+                    <strong>Software & Programming Languages:</strong>
                     <p>MATLAB, Python, R, Java, C, Hspice, Citect. </p>
                 </li>
                 <li>

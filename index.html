@@ -43,7 +43,7 @@
             overflow-y: auto;
         }
 
-     .profile-pic {
+       .profile-pic {
             width: 200px;
             height: 250px;
             border-radius: 80%;
@@ -107,6 +107,19 @@
 
         .social-links a:hover {
             color: var(--link-color);
+        }
+        
+        /* NEW: Styles for the logo images */
+        .social-links a img.social-icon-img {
+            width: 24px;   /* Set the width of the logo image */
+            height: 24px;  /* Set the height of the logo image */
+            vertical-align: middle; 
+            border-radius: 4px; /* Optional: slight rounding for a modern look */
+            transition: opacity 0.3s;
+        }
+
+        .social-links a:hover img.social-icon-img {
+            opacity: 0.8;
         }
 
         /* --- Main Content (Right) --- */
@@ -251,10 +264,18 @@
         </nav>
 
         <div class="social-links">
-            <a href="mailto:hosna.gandeharioun@gmail.com">Email</a> 
-            <a href="https://www.linkedin.com/in/hosna-ghandeharioun" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=iLO74MkAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a href="https://hosnagh.github.io/" target="_blank">GitHub</a> 
+            <a href="mailto:hosna.gandeharioun@gmail.com" title="Send Email">
+                <img src="logos/email.png" alt="Email Logo" class="social-icon-img">
+            </a> 
+            <a href="https://www.linkedin.com/in/hosna-ghandeharioun" target="_blank" title="LinkedIn Profile">
+                <img src="logos/linkedin.png" alt="LinkedIn Logo" class="social-icon-img">
+            </a>
+            <a href="https://scholar.google.com/citations?user=iLO74MkAAAAJ&hl=en" target="_blank" title="Google Scholar Profile">
+                <img src="logos/scholar.png" alt="Google Scholar Logo" class="social-icon-img">
+            </a>
+            <a href="https://hosnagh.github.io/" target="_blank" title="GitHub Profile">
+                <img src="logos/github.png" alt="GitHub Logo" class="social-icon-img">
+            </a> 
         </div>
 
     </div>
@@ -265,9 +286,9 @@
             <h2>About Me</h2>
             <p>I'm Hosna Ghandeharioun, a data scientist, machine learning expert, and an esteemed researcher in biomedical engineering with 20 years of dedicated experience in academia and industry as a university professor and biomedical engineering consultant. </p>
             
-            <p>I am pushing the boundaries of healthcare technology to new heights using Artificial Intelligence.With a solid foundation in biomedical signal processing, pre-diagnostic system development, and more, I'm deeply passionate about employing blind source separation analysis for <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank">biological signals denoising</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/26632086/" target="_blank">data mining</a> ,  <a href="https://aircconline.com/csit/papers/vol11/csit111503.pdf" target="_blank">deep learning, and Generative AI</a> across diverse medical domains.</p>
+            <p>I am pushing the boundaries of healthcare technology to new heights using Artificial Intelligence.With a solid foundation in biomedical signal processing, pre-diagnostic system development, and more, I'm deeply passionate about employing blind source separation analysis for <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank">biological signals denoising</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/26632086/" target="_blank">data mining</a> ,  <a href="https://aircconline.com/csit/papers/vol11/csit111503.pdf" target="_blank">deep learning, and Generative AI</a> across diverse medical domains.</p>
             
-            <p>Some of my notable achievements include <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank"> Electroencephalogram (EEG) ocular artifact removal</a> and  <a href="https://aircconline.com/abstract/ijaia/v12n6/12621ijaia05.html" target="_blank">home-based pre-diagnosis of obstructive sleep apnea (OSA)</a>, where I contributed significantly to novel data analysis methodologies and pre-diagnostic systems. In the realm of research and project development, I thrive from concept inception to seamless management, ensuring impactful outcomes. </p>
+            <p>Some of my notable achievements include <a href="https://www.sciencedirect.com/science/article/abs/pii/S1350453310000846" target="_blank"> Electroencephalogram (EEG) ocular artifact removal</a> and  <a href="https://aircconline.com/abstract/ijaia/v12n6/12621ijaia05.html" target="_blank">home-based pre-diagnosis of obstructive sleep apnea (OSA)</a>, where I contributed significantly to novel data analysis methodologies and pre-diagnostic systems. In the realm of research and project development, I thrive from concept inception to seamless management, ensuring impactful outcomes. </p>
             
             <p>My approach goes beyond analytical thinking; I'm a dedicated problem solver, an innovative force, and a collaborative spirit. I have founded and directed the Biomedical Engineering & Affective Computing Lab at the Department of Electrical and Biomedical Engineering in Khorasan Institute of Higher Education (KIHE) and established and supervised the IEEE Student Branch in International Imam Reza University (IRIU). </p>
         </section>
@@ -278,7 +299,7 @@
             <div class="job">
                 <p class="job-title">Assistant Professor (Tenure Track)</p>
                 <p class="job-company">Khorasan Institute of Higher Education (KIHE)</p>
-                <p class="job-date">September 2018 - Present</p> 
+                <p class="job-date">September 2018 - Present</p>
                 <ul class="job-duties">
                     <li>Instructed Fundamental & Professional courses (Physiology, Anatomy, Medical Physics, Digital Signal Processing, Biomedical Signal Processing). </li>
                     <li>Founded & supervised the Scientific Institute of Biomed. Eng. for Students (2020). </li>
@@ -288,8 +309,8 @@
             </div>
             
             <div class="job">
-                <p class="job-title">Biomedical Engineering Consultant</p> 
-                <p class="job-company">PayaTech knowledge-based Ltd.</p> 
+                <p class="job-title">Biomedical Engineering Consultant</p>
+                <p class="job-company">PayaTech knowledge-based Ltd.</p>
                 <p class="job-date">September 2017 - Present</p>
                 <ul class="job-duties">
                     <li>Collaborated in the planning, design, development, and tests of software applications, mainly in gait and posture analysis. </li>
@@ -299,18 +320,18 @@
             </div>
             
             <div class="job">
-                <p class="job-title">Online Course Instructor</p> 
-                <p class="job-company">Kalan Danesh Sahand Ltd. (Faradars)</p> 
-                <p class="job-date">January 2024 - Present</p> 
+                <p class="job-title">Online Course Instructor</p>
+                <p class="job-company">Kalan Danesh Sahand Ltd. (Faradars)</p>
+                <p class="job-date">January 2024 - Present</p>
                 <ul class="job-duties">
                     <li>Instructed undergraduate and graduate online courses (e.g., "Medical Physics"). </li>
                 </ul>
             </div>
 
             <div class="job">
-                <p class="job-title">Faculty Lecturer</p> 
-                <p class="job-company">Imam Reza International University (IRIU)</p> 
-                <p class="job-date">December 2008 - December 2016</p> 
+                <p class="job-title">Faculty Lecturer</p>
+                <p class="job-company">Imam Reza International University (IRIU)</p>
+                <p class="job-date">December 2008 - December 2016</p>
                 <ul class="job-duties">
                     <li>Instructed courses including Engineering Mathematics, Electrical Circuits I, Biological Signal Processing, Neural Networks, and Medical Instrumentation. </li>
                     <li>Conducted "eHealth & Health informatics; Opportunities and Challenges" Workshop. </li>
@@ -324,7 +345,7 @@
 
             <ul class="publications-list">
                 <li>
-                    <span class="pub-title">"APNEAPACK; A Smart Phone Application for Real-Time Home-Based Screening of Obstructive Sleep Apnea..."</span> 
+                    <span class="pub-title">"APNEAPACK; A Smart Phone Application for Real-Time Home-Based Screening of Obstructive Sleep Apnea..."</span>
                     <span class="pub-details">Under revision at IET Signal Processing. </span>
                 </li>
                 <li>
@@ -367,9 +388,9 @@
                 </li>
                  <li>
                     <span class="pub-title">"
-                     <a href="https://ieeexplore.ieee.org/document/4462992" target="_blank">"A Fully Automatic Method for Ocular Artifact Suppression from EEG Data Using Wavelet Transform and ICA"</a>    
+                      <a href="https://ieeexplore.ieee.org/document/4462992" target="_blank">"A Fully Automatic Method for Ocular Artifact Suppression from EEG Data Using Wavelet Transform and ICA"</a>    
                     </span>
-                     <span class="pub-details">In Proc. 28th Engineering in Medicine & Biology Society (EMBS) Annual International Conference, 2006, New York, USA. </span>
+                    <span class="pub-details">In Proc. 28th Engineering in Medicine & Biology Society (EMBS) Annual International Conference, 2006, New York, USA. </span>
                 </li>
             </ul>
         </section>
@@ -387,7 +408,7 @@
             <p><strong>A Modified Method for Sleep Apnea Detection with Effective Hardware Implementation</strong> <br>
             The hardware and smartphone application are undergoing the procedure of IRI patent. Publication of three related journal papers in SCOPUS indexed journals.</p>
 
-            <h2>Awards & Distinctions</h2> 
+            <h2>Awards & Distinctions</h2>
             <ul class="job-duties">
                 <li>The Distinguished Professor Award, Imam Reza International University (IRIU), 2021. </li>
                 <li>Top Graduate Student, Electrical Engineering Department, Ferdowsi University of Mashhad (FUM), 2016. </li>
@@ -399,7 +420,7 @@
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>
-                    <strong>Software & Programming Languages:</strong> 
+                    <strong>Software & Programming Languages:</strong>
                     <p>MATLAB, Python, R, Java, C, Hspice, Citect. </p>
                 </li>
                 <li>
